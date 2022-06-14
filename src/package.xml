@@ -3,7 +3,7 @@
     <types>
         <members>Contact.Pan_Card__c</members>
         <members>Lead.Account__c</members>
-		<members>Student__c.Year_of_Class__c</members>
+	<members>Student__c.Year_of_Class__c</members>
         <name>CustomField</name>
     </types>
     <version>53.0</version>
