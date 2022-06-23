@@ -2,121 +2,121 @@ public with sharing class Pattern
 {
     public static void leftPascalTriangle() 
     {
-        Integer i,j;
-        String s;
-        for(i=1;i<=9;i++)
+        Integer rows,column;
+        String print;
+        for(rows=1;rows<=9;rows++)
         {
-	        s='';
-            if(i<=5)
+	        print='';
+            if(rows<=5)
             {
-	            for(j=1;j<=5;j++)
+	            for(column=1;column<=5;column++)
 	            {
-		            if(j<=5-i)
-			            s='_'+s;  
+		            if(column<=5-rows)
+			            print='_'+print;  
 		            else
-			            s=s+'*';
+			            print=print+'*';
 	            }
-	            System.debug(s);
+	            System.debug(print);
             }
             else
             {
-                for(j=6;j<=10;j++)
+                for(column=6;column<=10;column++)
                 {
-                    if(j<=i)
-                        s='_'+s; 
+                    if(column<=rows)
+                        print='_'+print; 
                     else
-                        s=s+'*';
+                        print=print+'*';
                 }
-                System.debug(s);
+                System.debug(print);
             }   
         }
     }
     public static void downTraingle()
     {
-        Integer i,j;
-        String s;
-        for(i=1;i<=5;i++)
+        Integer rows,column;
+        String print;
+        for(rows=1;rows<=5;rows++)
         {
-	        s='';
-	        for(j=1;j<=9;j++)
+	        print='';
+	        for(column=1;column<=9;column++)
 	        {
-		        if(i==1)
-			        s='*'+s;  
+		        if(rows==1)
+			        print='*'+print;  
 		        else
-                {   if(i==j || j==10-i)
-			            s='*'+s;
+                {   if(rows==column || column==10-rows)
+			            print='*'+print;
                     else
-                        s='_'+s;
+                        print='_'+print;
                 }
 
 	        }
-	        System.debug(s);
+	        System.debug(print);
         }
     }
     public static void leftTriangle()
     {
-        Integer i,j;
-        String s;
-        for(i=1;i<=5;i++)
+        Integer rows,column;
+        String print;
+        for(rows=1;rows<=5;rows++)
         {
-	        s='';
-	        for(j=1;j<=5;j++)
+	        print='';
+	        for(column=1;column<=5;column++)
 	        {
-		        if(j<=5-i)
-			        s='_'+s;  
+		        if(column<=5-rows)
+			        print='_'+print;  
 		        else
-			        s=s+'*';
+			        print=print+'*';
 	        }
-	        System.debug(s);
+	        System.debug(print);
         }
     }
     public static void downwardTriangle()
     {
-        Integer i,j;
-        String s;
-        for(i=1;i<=5;i++)
+        Integer rows,column;
+        String print;
+        for(rows=1;rows<=5;rows++)
         {
-	        s='';
-	        for(j=1;j<=5;j++)
+	        print='';
+	        for(column=1;column<=5;column++)
 	        {
-		        if(j<i)
-			        s='_'+s;  
+		        if(column<rows)
+			        print='_'+print;  
 		        else
-			        s=s+'*';
+			        print=print+'*';
 	        }
-	        System.debug(s);
+	        System.debug(print);
         }
     }
     public static void leftPascalTriangle(Integer rows) 
     {
         if(math.mod(rows,2)!=0)
         {
-            Integer i,j,k=rows/2;
-            String s;
-            for(i=1;i<=rows;i++)
+            Integer rowcount,column,halfrow=rows/2;
+            String print;
+            for(rowcount=1;rowcount<=rows;rowcount++)
             {
-                s='';
-                if(i<=k)
+                print='';
+                if(rowcount<=halfrow)
                 {
-                    for(j=1;j<=k+1;j++)
+                    for(column=1;column<=halfrow+1;column++)
                     {
-                        if(j<=(k+1)-i)
-                            s='_'+s;  
+                        if(column<=(halfrow+1)-rowcount)
+                            print='_'+print;  
                         else
-                            s=s+'*';
+                            print=print+'*';
                     }
-                    System.debug(s);
+                    System.debug(print);
                 }
                 else
                 {
-                    for(j=k+2;j<=rows+1;j++)
+                    for(column=halfrow+2;column<=rows+1;column++)
                     {
-                        if(j<=i)
-                            s='_'+s; 
+                        if(column<=rowcount)
+                            print='_'+print; 
                         else
-                            s=s+'*';
+                            print=print+'*';
                     }
-                    System.debug(s);
+                    System.debug(print);
                 }  
             } 
         }
@@ -128,24 +128,24 @@ public with sharing class Pattern
     {
         if(math.mod(rows,2)!=0)
         {
-            Integer i,j,k=rows*2;
-            String s;
-            for(i=1;i<=rows;i++)
+            Integer rowcount,column,doublerow=rows*2;
+            String print;
+            for(rowcount=1;rowcount<=rows;rowcount++)
             {
-                s='';
-                for(j=1;j<=k-1;j++)
+                print='';
+                for(column=1;column<=doublerow-1;column++)
                 {
-                    if(i==1)
-                        s='*'+s;  
+                    if(rowcount==1)
+                        print='*'+print;  
                     else
-                    {   if(i==j || j==k-i)
-                            s='*'+s;
+                    {   if(rowcount== column|| column==doublerow-rowcount)
+                            print='*'+print;
                         else
-                            s='_'+s;
+                            print='_'+print;
                     }
 
                 }
-                System.debug(s);
+                System.debug(print);
             }
         }
         else
@@ -153,36 +153,36 @@ public with sharing class Pattern
     }
     public static void leftTriangle(Integer rows)
     {
-        Integer i,j;
-        String s;
-        for(i=1;i<=rows;i++)
+        Integer rowcount,column;
+        String print;
+        for(rowcount=1;rowcount<=rows;rowcount++)
         {
-            s='';
-            for(j=1;j<=rows;j++)
+            print='';
+            for(column=1;column<=rows;column++)
             {
-                if(j<=rows-i)
-                    s='_'+s;  
+                if(column<=rows-rowcount)
+                    print='_'+print;  
                 else
-                    s=s+'*';
+                    print=print+'*';
             }
-            System.debug(s);
+            System.debug(print);
         }
     } 
     public static void downwardTriangle(Integer rows)
     {
-        Integer i,j;
-        String s;
-        for(i=1;i<=rows;i++)
+        Integer rowcount,column;
+        String print;
+        for(rowcount=1;rowcount<=rows;rowcount++)
         {
-            s='';
-            for(j=1;j<=rows;j++)
+            print='';
+            for(column=1;column<=rows;+column++)
             {
-                if(j<i)
-                    s='_'+s;  
+                if(column<rowcount)
+                    print='_'+print;  
                 else
-                    s=s+'*';
+                    print=print+'*';
             }
-            System.debug(s);
+            System.debug(print);
         }
     }
    
