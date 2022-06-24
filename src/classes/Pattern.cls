@@ -16,7 +16,7 @@ public with sharing class Pattern
 		    else
 		        print=print+'*';
 	        }
-	            System.debug(print);
+	        System.debug(print);
             }
             else
             {
