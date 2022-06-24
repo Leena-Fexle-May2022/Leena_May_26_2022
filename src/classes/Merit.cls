@@ -6,7 +6,7 @@ public with sharing class Merit {
         for(Student__c s : Merit.s1)
         {
             if(s.X1st_Sem_Percentage__c > Merit.percentCheck)
-                    System.debug(s.Name);
+                System.debug(s.Name);
         }
 
     }
