@@ -6,7 +6,7 @@ public with sharing class Pattern
         String print;
         for(rows=1;rows<=9;rows++)
         {
-	    print='';
+	        print='';
             if(rows<=5)
             {
 	            for(column=1;column<=5;column++)
@@ -43,12 +43,12 @@ public with sharing class Pattern
 		        if(rows==1)
 			        print='*'+print;  
 		        else
-                        {   
-			    if(rows==column || column==10-rows)
-			        print='*'+print;
-                            else
-                                print='_'+print;
-                        }
+                {   
+			        if(rows==column || column==10-rows)
+			            print='*'+print;
+                    else
+                        print='_'+print;
+                }
 
 	        }
 	        System.debug(print);
