@@ -7,6 +7,22 @@
         <members>Person</members>
         <members>Student</members>
         <name>ApexClass</name>
+        <members>HelloWorldTestClass</members>
+        <members>MyHelloWorld</members>
+        <members>Pattern</members>
+        <members>Collections</members>
+        <members>Merit</members>
+        <members>PrimitiveDataType</members>
+        <members>YogaClass</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>*</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>Book__c</members>
+        <name>CustomObject</name>
     </types>
     <version>53.0</version>
 </Package>
