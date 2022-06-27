@@ -4,6 +4,10 @@
         <members>HelloWorldTestClass</members>
         <members>MyHelloWorld</members>
         <members>Pattern</members>
+        <members>Collections</members>
+        <members>Merit</members>
+        <members>PrimitiveDataType</members>
+        <members>YogaClass</members>
         <name>ApexClass</name>
     </types>
     <types>
