@@ -6,6 +6,7 @@
         <members>MethodAndArguements</members>
         <members>Person</members>
         <members>Student</members>
+        <members>OperatorsAndExpressions</members>
         <members>HelloWorldTestClass</members>
         <members>MyHelloWorld</members>
         <members>Pattern</members>
