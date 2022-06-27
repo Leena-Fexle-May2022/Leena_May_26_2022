@@ -6,7 +6,6 @@
         <members>MethodAndArguements</members>
         <members>Person</members>
         <members>Student</members>
-        <name>ApexClass</name>
         <members>HelloWorldTestClass</members>
         <members>MyHelloWorld</members>
         <members>Pattern</members>
